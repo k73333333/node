@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    new Vue({
+        el:"#root",  
+        data:{
+            selectById : "",
+        },
+        methods:{
+            yourMethod:function(id){ 
+                 $.ajax({
+                    type : "POST",
+                    url : "selectCsdbById.shtml",
+                    data : {
+                        id : id,
+                    },
+                    success : function(data) {
+                        console.log(data);
+                        
+　　　　　　　　　　　　　　 var message = $.parseJSON(data);//后台返回的json数据需要转为对象
+                         vue.selectById=message;//把后台返回的JSON数据赋给selectById
+                    },
+                    error : function(){
+                        alert("错误");
+                    }
+
+                });
+            },
+            updateById:function(){
+                $.ajax({
+                        type : "get",
+                        url : "127.0.0.1/api",
+                        data : vue.selectById,
+                        success : function(data) {
+                            alert(data);
+                        },
+                        error : function(){
+                            alert("错误");
+                        }
+
+                    });
+            },
+        }
+    })      
+</script>
+<body>
+    <div id="root">
+        <input type="text" name="name" v-model="selectById.name" > //v-model实现数据的双向绑定
+    </div>
+</body>
+</html>

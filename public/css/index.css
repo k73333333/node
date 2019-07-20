@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none}
+body{width: 100%;position: relative;background: #f8f8f8}
+p{
+    -webkit-line-clamp:1; 
+  }
+
+/* 主体css */
+.main{
+    position: relative;
+    top:2.5rem;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+/* 轮播图 */
+.lunBoTu{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lunBoTu img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.lunBoTu img:nth-child(1){
+    position: relative;
+    width: 100%;
+    /* visibility:hidden;   */
+    z-index: -10;
+}
+
+.main .splist{
+    width: 100%;
+}
+.main .splist ul{
+    width: 100%;
+    overflow: hidden;
+}
+.main .splist ul li{
+    background: #fff;
+    list-style-type: none;
+    float: left;
+    width: 45%;
+    margin:3% 0 3% 3%;
+}
+.main .splist ul li p:nth-child(2){
+    color: black;
+}
+.main .splist ul li p:nth-child(3){
+    color: red;
+}
+.main .splist img{
+    width: 100%;
+}

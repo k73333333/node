@@ -1,0 +1,122 @@
+.dengLuJieMian{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: forestgreen;
+    z-index: 33;
+}
+.dengLuJieMian p{
+    text-align: center;
+    margin-top: 5%
+}
+.dengLuJieMian p:nth-child(1){
+    margin-top: 70%;
+}
+body{
+    background: #f2f2f2;
+    position: relative;
+    z-index: 1;
+}
+.personalHeader{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to left, #fe3638, #ff2b77);
+    overflow: hidden;
+}
+.personalHeader img:nth-child(1) {
+    width: 13%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 2% 3% 0 3%;
+} 
+.personalHeader span {
+    position: absolute;
+    top: 20%;
+} 
+.personalHeader img:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    width: 6%;
+    margin: 2% 3% 0 3%;
+} 
+.personalHeader .geRenXinXi{
+    color: #fff;
+}
+
+.personalHeader .fenLei li{
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    width: 17%;
+    margin: 4%;
+    color: #fff;
+    font-size: 0.8em;
+}
+.main{
+    width: 100%;
+}
+ .mainFenLei{
+    position: relative;
+    top: -2rem;
+    left: 10%;
+    width: 80%;
+    background: #fff;
+    border-radius:1rem; 
+    padding-top: 2rem;
+    z-index: 2;
+}
+.mainFenLei .mainFenLeiXq{
+    display:inline-block;
+    width: 25%;
+    padding: 5% 0;
+    text-align: center;
+}
+.FenLeimain{
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.mainFenLeiNeiRong{
+    position: relative;
+    width: 80%;
+    left: 7%;
+    background: #fff;
+    margin:0 0 3% 0;
+    border-radius: 1rem; 
+    padding: 2% 3% 3% 3%;
+    overflow: hidden;
+}
+.mainFenLeiNeiRong p{
+    padding:1%;
+}
+.mainFenLeiNeiRong .spjiage{
+    float: right;
+    font-size: 0.8em;
+}
+.mainFenLeiNeiRong .spjiage span{
+    font-size: 1.3em;
+    color: red;
+}
+.mainFenLeiNeiRong .mainFenLeiNeiRongXq{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.mainFenLeiNeiRong .mainFenLeiNeiRongXq img{
+    float: left;
+    width: 30%;
+}
+.mainFenLeiNeiRong .mainFenLeiNeiRongXq p:nth-child(2){
+    padding-top: 0;
+    width: 65%;
+}
+.mainFenLeiNeiRong .mainFenLeiNeiRongXq p:nth-child(3){
+    color: #5f605d;
+    font-size: 0.9em;
+}
+.mainFenLeiNeiRong .mainFenLeiNeiRongXq p:nth-child(4){
+    color: #5f605d;
+    font-size: 0.9em;
+    /* border: 1px solid #ccc; */
+    padding: 0 10%;
+}

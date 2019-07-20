@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/mobil.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/personal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="dengLuJieMian" v-if="dlzt!='t'">
+            <p>账号：<input type="text" v-model="dlname"></p>
+            <p>密码：<input type="password" v-model="dlpassword"></p>
+            <p><input @click="dengluck()" onclick="chongDingXiang()" type="button" value="登录"></p>
+        </div>
+        <header><div class="personalHeader">
+            <img :src="touXiang">
+            <span class="geRenXinXi">
+                <p>{{yonghumin}}</p>
+            </span>
+            <img :src="sheZhi">
+            <div class="fenLei">
+                <ul>
+                    <li v-for="(v, i) in topArr">
+                        <p>{{v.shuLiang}}</p><p>{{v.fenLeiName}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div></header>
+        <section><div id="main" class="main">
+            <div id="mainFenLei">
+                <div class="mainFenLei">
+                    <div class="mainFenLeiXq" v-for="(t,index) in tab" @click="demoClick(index)">{{t}}
+                    </div>
+                </div>
+                <div v-for="(c,index) in content" v-if="index == tabNum"  class="FenLeimain">
+                    <div v-for="(d,index) in selectById" class="mainFenLeiNeiRong">
+                        <p>{{d.name}}</p>
+                        <div class="mainFenLeiNeiRongXq">
+                            <img :src="d.spSrc">
+                            <p>{{d.spname}}</p>
+                            <p>{{d.spxq}}</p>
+                        </div>
+                        <p class="spjiage">价格：<span>{{d.shuliang}}</span></p>
+                    </div>
+                </div>
+            </div>
+    </div></section>
+
+        <myfooter :dlzt="dlzt"></myfooter>
+    </div>
+</body>
+<script src="./js/vueMobil.js"></script>
+<script src="./js/personal.js"></script>
+<script src="./js/jqindex.js"></script>
+
+</html>

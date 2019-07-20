@@ -1,0 +1,172 @@
+section .main{
+    position: relative;
+    top: 3rem;
+    text-align: center
+}
+section .main h1{
+    margin-bottom: 0.5rem;
+}
+section .main p:nth-child(2){
+    color: darkcyan;
+}
+section .main p:nth-child(3){
+    color: rgb(136, 136, 136);
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+section .main span{
+    color: red;
+}
+.spxqNeiRong{
+    margin-top: 1rem;
+    top: 3rem;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.7em;
+    color: #000;
+}
+section .main img{
+    width: 95%;
+    margin-bottom: 10rem;
+}
+
+
+
+.page{position: relative;display: none;width: 100%;overflow: hidden;}
+*{margin: 0;padding: 0;}
+
+/* 头部css */
+.header{
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    background: linear-gradient(to left, #fe3638, #ff2b77);
+    z-index: 999;
+}
+.headerWeiZhi{
+    position: absolute;
+    margin: -0.2rem 0 0 0.3rem;
+    left: 0;
+    width: 2rem;
+}
+.headerWeiZhi img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.indexSouSuo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 60%;
+    height: 1rem;
+    border: 1px solid #ccc;
+    border-radius:8px; 
+    padding: 0.3rem;
+    margin: 0 auto;
+    z-index: 2;
+}
+.headerGeRen{
+    position: absolute;
+    margin: -0.2rem 0.3rem 0 0;
+    right: 0;
+    width: 2rem;
+}
+.headerGeRen img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+/* 底部 */
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: -3px;
+    z-index: 999;
+    /* background: red; */
+}
+.footer form{
+    width: 100%;
+    padding: 40% 0;
+    background: #ffffff;
+}
+.footer p{
+    position: relative;
+    width: 80%;
+    padding: 1%;
+    left: 9%;
+}
+.footer input:nth-child(6){
+    width: 100%;
+    padding: 2% 0;
+    font-size: 1.2em;
+    color: #ffffff;
+    background: linear-gradient(to left, #fe3638, #ff2b77);
+}
+.footer input{
+    width: 96%;
+    padding: 2%;
+    border: 1px solid #ccc;
+}
+.footer textarea{
+    width: 100%;
+    height: 13rem;
+    margin-top: 3%;
+    /* padding: 0 0 20% 0; */
+    border: 1px solid #ccc;
+}
+.footer nav{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    overflow:visible;
+}
+.footer ul{
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+.footer ul li{
+    width: 25%; 
+    float: left;
+    padding-top: 0.3rem;
+    border-top:0.01rem solid #ccc; 
+    list-style: none;
+}
+.footer ul li img{
+    width: 37%;
+    margin:0 30%; 
+}
+.footer ul li:nth-child(2) img{
+    width: 37%;
+    margin:0 30% 0 0; 
+}
+.footer ul li:nth-child(3) img{
+    width: 37%;
+    margin:0 0 0 70%; 
+}
+.tianjiasp{
+    position: absolute;
+    bottom: 10%;
+    left: 41%;
+    width: 18%;
+    padding: 9% 0;
+    border-radius: 50%;
+    background: linear-gradient(to left, #fe3638, #ff2b77);
+}
+/* .tianjiasp:after{ 
+    position: absolute;
+    top: -60%;
+    left: -5%;
+    width: 30%;
+    content:"+";
+    font-size: 7em;
+    color: #ffffff;
+    font-weight: 1px;
+} */
+
+
